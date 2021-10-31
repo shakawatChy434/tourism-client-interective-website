@@ -1,0 +1,31 @@
+/* .bnner-part img{
+    height: 800px;
+    width: 100%;
+} */
+
+.bnner-part{
+    height: 500px;
+    width: 100%;
+    background-image: url(../../../images/1603969892-productphotog-14.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-details{
+    margin-top: 150px;
+}
+.banner-details{
+color: #e2872b;
+}
+
+.btn-detail {
+    background-color: darkorange;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    border:  3px solid white;
+    border-radius: 10px;
+}
+.btn-detail:hover{
+background-color: white;
+}

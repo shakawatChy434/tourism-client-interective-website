@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Thailand",
+        "img": "https://youth-hostel.si/assets/images/upload/Globetrotter/2021/06_Julij_2021/Bangkok/Photo_by_Evan_Krause_on_Unsplash.jpg",
+        "amount": 245,
+        "discription": "Tourism is a very important industry in Thailand, which means excellent tourist infrastructure. ....",
+        "reviews": 47
+    },
+    {
+        "id": 2,
+        "name": "Australia",
+        "amount": 326,
+        "img": "https://media.istockphoto.com/photos/australian-beach-kangaroo-portrait-picture-id653423144?k=20&m=653423144&s=612x612&w=0&h=BbYBUZlr9zVhmiInVuAcKY4oUQpRpUBjfEinmRRF7cQ=",
+        "discription": "Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland .....",
+        "reviews": 50
+    },
+    {
+        "id": 3,
+        "name": "Canada",
+        "amount": 432,
+        "img": "https://thumbs.dreamstime.com/b/night-city-17639045.jpg",
+        "discription": "Canada is a country in North America. Its ten provinces and three territories extend from the ..... ",
+        "reviews": 150
+    }
+]

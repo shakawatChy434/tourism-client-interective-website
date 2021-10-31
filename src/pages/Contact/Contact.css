@@ -1,0 +1,55 @@
+.add-contct form{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+}
+.add-contct form input,textarea{
+    padding:10px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.add-contct label{
+    /* height: 10px; */
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: cursive;
+    font-style: italic;
+}
+.bgImg{
+background-image: url(../../images/banner1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 60px 50px ;
+}
+.btn-submit{
+    color: #000;
+    font-size: 20px;
+}
+.btn-submit:hover{
+background-color: orange;
+border: 2px solid black;
+border-radius: 10px;
+}
+.icon{
+    height: 60px;
+    width: 50px;
+    background-color: red;
+    border-radius: 30%;
+}
+.add-contct{
+    margin-left: 15%;
+}
+.icon-details{
+    padding:0 10px ;
+}
+
+.icon-details:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    color: #fff;
+}

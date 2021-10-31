@@ -1,0 +1,19 @@
+.bgImg-login{
+    background-image: url(../../../images/exam_login_banner_m.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 210px 50px ;
+    }
+    .googleIcon img{
+        height: 50px;
+        padding-left: 60px;
+    }
+    .googleIcon{
+        border: 5px solid cyan;
+        border-radius:10px;
+        background-color: darkblue;
+    }
+    .googleIcon:hover{
+        background-color:rgb(32, 30, 30);
+    }

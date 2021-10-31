@@ -1,0 +1,25 @@
+.tour-details{
+    height: auto;
+    width: 310px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    box-shadow: blue;
+    border: 5px solid rgb(211, 207, 207);
+    margin-right: 5px;
+}
+.tour-details img{
+    height: 200px;
+    width: auto;
+    border-radius: 05px;
+}
+.details h4,p{
+    color: rgb(75, 74, 74);
+    font-size: medium;
+    font-weight: 600;
+    font-family: cursive;
+}
+.tour-details:hover{
+    background: rgb(218, 210, 210);
+    color:rgb(95, 106, 204);
+    font-size: medium;
+}
