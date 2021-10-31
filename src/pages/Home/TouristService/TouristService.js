@@ -17,7 +17,7 @@ const TouristService = (props) => {
                             <p>From ${amount} </p>
                         </div>
                         <div className="btn-details ms-4 mt-3">
-                            <button className="btn-details ms-5 bg-white"><FaArrowCircleRight /></button>
+                            <button onClick={`/serviceConfirm/${id}`} className="btn-details ms-5 bg-white"><FaArrowCircleRight /></button>
                         </div>
                     </div>
                 </div>

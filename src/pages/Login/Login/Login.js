@@ -3,13 +3,28 @@ import './Login.css'
 import { useForm } from "react-hook-form";
 import { AiOutlineMail } from 'react-icons/ai';
 import { FiUnlock } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import googleIcon from '../../../images/google-sing-in.png'
+import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
+    const { singInWithGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home'
+
+    /* React hook form activities start */
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
+    }
+    /* React hook form activities end */
+
+    const handlerGoogleLogin = () => {
+        singInWithGoogle()
+            .then((result) => {
+                history.push(redirect_uri)
+            })
     }
     return (
         <div className="bgImg-login">
@@ -32,8 +47,7 @@ const Login = () => {
                     </Link>
                 </div>
             </div>
-
-            <div className="googleIcon d-flex col-sm-12 col-md-6 col-lg-3 ms-auto me-auto  mt-5 ">
+            <div onClick={handlerGoogleLogin} className="googleIcon d-flex col-sm-12 col-md-6 col-lg-3 ms-auto me-auto  mt-5 ">
                 <img src={googleIcon} alt="" />
                 <h4 className="text-white mt-2 ms-4">Login With Google</h4>
             </div>
