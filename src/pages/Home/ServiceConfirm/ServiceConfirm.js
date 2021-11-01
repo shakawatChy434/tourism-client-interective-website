@@ -19,7 +19,7 @@ const ServiceConfirm = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/services/${serviceId}`
+        const url = `https://mysterious-plains-45538.herokuapp.com/services/${serviceId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data))
@@ -34,7 +34,7 @@ const ServiceConfirm = () => {
 
         const addNewService = { name, email, serviceName, date, number };
 
-        fetch(("http://localhost:5000/orders"), {
+        fetch(("https://mysterious-plains-45538.herokuapp.com/orders"), {
             method: "POST",
             headers: {
                 'content-type': 'application/json',
@@ -60,7 +60,7 @@ const ServiceConfirm = () => {
                         <input defaultValue={user.displayName} ref={nameRef} /> <br />
                         <label htmlFor="">Email</label> <br />
                         <input defaultValue={user.email} ref={emailRef} /> <br />
-                        <label htmlFor="">Service Name</label>
+                        <label htmlFor="">Service Name</label> <br />
                         <input defaultValue={name} ref={serviceNameRef} /><br />
                         <label htmlFor="">Date</label><br />
                         <input type="date" defaultValue="" ref={dateRef} /><br />

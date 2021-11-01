@@ -8,7 +8,7 @@ const TouristServices = () => {
     const [users, setUser] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://mysterious-plains-45538.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setUser(data))
     }, []);
