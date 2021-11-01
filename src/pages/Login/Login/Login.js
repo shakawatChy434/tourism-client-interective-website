@@ -11,7 +11,7 @@ const Login = () => {
     const { singInWithGoogle } = useAuth();
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/home'
+    const redirect_uri = location.state?.from || '/serviceConfirm';
 
     /* React hook form activities start */
     const { register, handleSubmit } = useForm();
@@ -29,13 +29,12 @@ const Login = () => {
     return (
         <div className="bgImg-login">
             <div id="contact" className="col-sm-12 col-md-6 col-lg-3 ms-auto me-auto  add-contct" >
-                <h3 className="text-white">Log-In</h3>
-                <form className="mt-4" onSubmit={handleSubmit(onSubmit)}>
-
-                    <label className="text-white"><AiOutlineMail /> Email </label>
-                    <input {...register("email", { required: true, maxLength: 20 })} placeholder="your email" />
-                    <label className="text-white"><FiUnlock /> Password </label>
-                    <input {...register("password")} placeholder="password" type="password" />
+                <h3 className="text-white me-5">Log-In</h3>
+                <form className="mt-4 me-5" onSubmit={handleSubmit(onSubmit)}>
+                    <label className="text-white"><AiOutlineMail /> Email </label> <br />
+                    <input {...register("email", { required: true, maxLength: 20 })} placeholder="your email" /> <br />
+                    <label className="text-white"><FiUnlock /> Password </label> <br />
+                    <input {...register("password")} placeholder="password" type="password" /> <br /> <br />
                     <div className="col-lg-6 d-flex ms-5 ">
                         <input className="btn-submit px-4 ms-5 text-center " type="submit" />
                     </div>

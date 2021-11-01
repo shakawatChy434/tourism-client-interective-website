@@ -4,7 +4,7 @@ import { Redirect, Route } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 
 
-const PrivetRoute = ({ children, ...rest }) => {
+const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
     /* Remain in our main pages. */
     if (isLoading) {
@@ -30,4 +30,4 @@ const PrivetRoute = ({ children, ...rest }) => {
     );
 };
 
-export default PrivetRoute;
+export default PrivateRoute;

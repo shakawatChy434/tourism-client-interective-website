@@ -1,36 +1,30 @@
 [
     {
-        "id": "1",
         "name": "Beijing,China",
         "amount": 850,
         "img": "https://media.istockphoto.com/photos/bronze-lion-in-the-hall-of-supreme-harmony-in-forbidden-picture-id598818270?k=20&m=598818270&s=612x612&w=0&h=_lOkMOYmNE9T_OVz5x6sJkGcNvnpYLdhfjWZV8kp8mA="
     },
     {
-        "id": "2",
         "name": "Tokyo,Japan",
         "amount": 955,
         "img": "https://thumbs.dreamstime.com/b/night-city-17639045.jpg"
     },
     {
-        "id": "3",
         "name": "Sempo,Malaysia",
         "amount": 650,
         "img": "https://st.depositphotos.com/1039098/1352/i/950/depositphotos_13526088-stock-photo-house-boat-in-backwaters.jpg"
     },
     {
-        "id": "4",
         "name": "Victoria,Columbia",
         "amount": 850,
         "img": "https://media.istockphoto.com/photos/the-scenic-view-of-the-tun-sakaran-marine-park-picture-id497033556?k=20&m=497033556&s=612x612&w=0&h=tXbDuR11Fywe5s8SHNNU0M2GHzVI4X0km9MD22lDCKo="
     },
     {
-        "id": "5",
         "name": "Bangkok,Thailand",
         "amount": 850,
         "img": "https://media.istockphoto.com/photos/mt-fuji-and-tokyo-skyline-picture-id904453184?b=1&k=20&m=904453184&s=170667a&w=0&h=rwzxuUV5F3Sr8qm9eqE09ZrknCIGe2ZgKmyxo2fIDgo="
     },
     {
-        "id": "6",
         "name": "Jakarta,Indonesia",
         "amount": 850,
         "img": "https://www.planetware.com/wpimages/2020/04/canada-british-columbia-victoria-tourist-attractions-parliament-and-boats.jpg"

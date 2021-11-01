@@ -5,18 +5,17 @@ import {
   Route,
 } from 'react-router-dom';
 import './App.css';
-import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home/Home';
-import PrivetRoute from './pages/Login/PrivetRoute/PrivetRoute';
-import TouristPackeges from './pages/Home/TouristPackeges/TouristPackeges';
-import TouristServices from './pages/Home/TouristServices/TouristServices';
+import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import Login from './pages/Login/Login/Login';
 import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/NotFound/NotFound';
-import Register from './pages/Login/Register/Register';
+import Footer from './pages/Footer/Footer';
 import AuthProvider from './Context/AuthProvider';
 import ServiceConfirm from './pages/Home/ServiceConfirm/ServiceConfirm';
-import PackegBooking from './pages/Home/PackegBooking/PackegBooking';
+import AddService from './pages/AddService/AddService';
+import Register from './pages/Login/Register/Register';
+
 
 function App() {
   return (
@@ -27,13 +26,13 @@ function App() {
           <Switch>
             <Route exact path="/"><Home></Home></Route>
             <Route path="/home"><Home></Home></Route>
-            <PrivetRoute path="/serviceConfirm/:serviceId"><ServiceConfirm></ServiceConfirm> </PrivetRoute>
-            <PrivetRoute path="/packegBooking/:id"><PackegBooking></PackegBooking> </PrivetRoute>
-            <Route path="/contact"><Contact></Contact> </Route>
-            <Route path="/register"><Register></Register> </Route>
+            <PrivateRoute path="/services/:serviceId"><ServiceConfirm></ServiceConfirm> </PrivateRoute>
+            <PrivateRoute path="/addService"><AddService></AddService>  </PrivateRoute>
             <Route path="/login"><Login></Login> </Route>
+            <Route path="/register"><Register></Register> </Route>
             <Route path="*"><NotFound></NotFound> </Route>
           </Switch>
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>

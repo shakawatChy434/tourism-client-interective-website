@@ -8,10 +8,10 @@ const TouristServices = () => {
     const [users, setUser] = useState([]);
 
     useEffect(() => {
-        fetch('./touriestsData.json')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setUser(data))
-    }, [])
+    }, []);
     return (
         <div id="service" className="container  mt-5 mb-5 p-5 ">
             <p className='text-danger'>Popular Destinations</p>
