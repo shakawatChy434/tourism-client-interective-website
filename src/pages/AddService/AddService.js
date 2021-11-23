@@ -20,7 +20,6 @@ const AddService = () => {
                     reset();
                 }
             })
-
     }
     return (
         <div className="bgImg-login">

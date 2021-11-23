@@ -60,7 +60,7 @@ const ServiceConfirm = () => {
                         <input defaultValue={user.displayName} ref={nameRef} /> <br />
                         <label htmlFor="">Email</label> <br />
                         <input defaultValue={user.email} ref={emailRef} /> <br />
-                        <label htmlFor="">Service Name</label> <br />
+                        <label htmlFor="">Service' Name</label> <br />
                         <input defaultValue={name} ref={serviceNameRef} /><br />
                         <label htmlFor="">Date</label><br />
                         <input type="date" defaultValue="" ref={dateRef} /><br />
