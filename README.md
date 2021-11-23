@@ -1,7 +1,7 @@
 ## Tour Planner (Tourista)
 
  
-[Click here to visite live site](https://tourista----tour-planner.web.app/home#home)
+[Click here to visite live site](https://tourista----tour-planner.web.app/)
 - We are providing all  kind of tour service;
 - You can easily buy your online ticket into our web site;
 - Tourista ensure customer security; 
